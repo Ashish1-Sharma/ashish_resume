@@ -63,14 +63,15 @@ function Projects() {
 
     return (
         <div className="flex flex-col items-center">
-            <span className="text-white font-medium text-md">Latest Works</span>
-            <div>
-                <span className="text-white font-normal text-2xl">Explore My Popular </span>
-                <span className="text-[#FF014F] font-normal text-2xl">Projects</span>
+            {/* <span className="text-white font-medium text-md my-5">Latest Works</span> */}
+            <div className="my-5">
+                <span className="text-white font-normal text-2xl md:text-4xl">Explore My Popular </span>
+                <span className="text-[#FF014F] font-normal text-2xl md:text-4xl">Projects</span>
             </div>
             <div className="w-full md:px-20">
                 <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
                     {
+                    
                         projectData.map((project, index) => {
                             return (
                                 <ProjectCard
@@ -84,6 +85,7 @@ function Projects() {
                                 />
                             );
                         })
+                    
                     }
                 </div>
             </div>

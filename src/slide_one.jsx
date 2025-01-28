@@ -3,13 +3,14 @@ import github from './assets/github.svg'
 import linkedin from './assets/linkedin.svg'
 import mail from './assets/mail.svg'
 import twitter from './assets/twitter.svg'
+import { Phone } from 'lucide-react';
 import profile from './assets/profile.png'
 function SlideOne() {
     return (
         <div className=''>
-            <nav className='flex items-center  border-gray-100 ml-4 sm:ml-0 mr-4 sm:mr-0  pt-2 pb-2'>
-                {/* <span className="">Ashish sharma</span> */}
-                <ul className='flex-grow flex justify-center space-x-7 ml-4 items-center'>
+            {/* <nav className='flex items-center  border-gray-100 ml-4 sm:ml-0 mr-4 sm:mr-0  pt-2 pb-2'>
+                 <span className="">Ashish sharma</span> 
+                <ul className='flex-grow flex justify-center sm:space-x-5 space-x-2  items-center'>
                     {['Home', 'About', 'Portfolio', 'Contact', 'Exhibition'].map((item) => (
                         <li key={item} className='no-underline text-white font-medium hover:text-white p-2 rounded transition-all duration-200 hover:rounded-lg sm:text-sm md:text-lg lg:text-xl hover:bg-[#FF014F] text-xs'>
                             {item}
@@ -24,7 +25,7 @@ function SlideOne() {
                     />
                 </div>
 
-            </nav>
+            </nav> */}
             <div className='flex flex-row justify-center items-center'>
                 <div className="flex flex-col justify-start mt-5">
                     <div className="text-[#ADADAD] text-sm mb-3">HELLO , MY NAME IS</div>
@@ -33,7 +34,8 @@ function SlideOne() {
                         <span className="text-white font-semibold text-5xl">Sharma</span>
                     </div>
                     <div className="text-[#ADADAD] mb-3">Software Engineer</div>
-                    <div className="text-white w-[50vw] mb-3">With over a year of hands-on experience in Flutter, I specialize in creating intuitive, responsive, and user-friendly mobile applications. My skill set extends to building interactive and visually appealing web interfaces, backed by a solid understanding of modern development practices.
+                    {/* <div className="text-[#ADADAD]">+91 8532059788</div> */}
+                    <div className="text-white md:w-[50vw] mb-3 line-clamp-8">With over a year of hands-on experience in Flutter, I specialize in creating intuitive, responsive, and user-friendly mobile applications. My skill set extends to building interactive and visually appealing web interfaces, backed by a solid understanding of modern development practices.
 
                         As a final-year BTech student. My work reflects a commitment to delivering high-quality, scalable solutions that enhance user experiences. With a drive for innovation and a goal to work on international projects, I aim to bring creativity and technical excellence to everything I build.</div>
                     <div className="flex flex-row space-x-4 mb-3">
@@ -44,13 +46,14 @@ function SlideOne() {
                         <button className='bg-[#1E1E1E] p-2 rounded-lg'><a href="https://github.com/Ashish1-Sharma" target="_blank"><img src={github} alt="" /></a></button>
                         <button className='bg-[#1E1E1E] p-2 rounded-lg'><a href="https://www.linkedin.com/in/ashish-sharma-8a9675224/" target="_blank"><img src={linkedin} alt="" /></a></button>
                         <button className='bg-[#1E1E1E] p-2 rounded-lg'><a href="mailto:wwwviveksharma45@gmail.com" target="_blank"><img src={mail} alt="" /></a></button>
+                        <button className='bg-[#1E1E1E] p-2 rounded-lg'><a href="tel:+918532059788" target="_blank"><Phone color='#FF014F'/></a></button>
                         {/* <button className='bg-[#1E1E1E] p-2 rounded-lg'><a href="https://github.com/Ashish1-Sharma" target="_blank"><img src={twitter} alt="" /></a></button> */}
                     </div>
 
 
                 </div>
 
-                <img src={profile} alt='error' className='w-0 md:w-96' />
+                <img src={profile} alt='error' className='w-0 hidden md:w-96 md:block' />
             </div>
             <div className='flex mt-5 md:flex-row 900:items-start md:items-start flex-col items-center m-3'>
 

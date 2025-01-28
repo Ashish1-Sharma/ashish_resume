@@ -19,7 +19,7 @@ function ProjectCard({ title, description, tags, img, link, techStack }) {
     };
     const [isHovered, setIsHovered] = useState(false)
     return (
-        <a href={link}>
+        <a href={link || '#'} onClick={(e) => !link && e.preventDefault()}>
             <div className="relative w-full p-3 rounded-xl bg-gradient-to-b from-[#151E31] via-[#182235] to-[#1D283A]  bg-[#1E293B] hover:border  hover:border-white "  >
                 <div className="flex flex-col h-full">
                     <div className="grow">

@@ -8,16 +8,16 @@ import Users from './assets/services/Users.svg'
 function Services() {
     return (
         <div className="flex flex-col mt-10 justify-center items-center">
-            <span className="text-[#ADADAD] mb-5">I like to make things easy and fun</span>
-            <div className="space-x-2">
-                <span className="text-white font-medium text-4xl">My</span>
-                <span className="text-[#FF014F] font-medium text-4xl">Special</span>
-                <span className="text-[#FF014F] font-medium text-4xl">Services</span>
-                <span className="text-white font-medium text-4xl">For</span>
-                <span className="text-white font-medium text-4xl">your</span>
+            {/* <span className="text-[#ADADAD] mb-5">I like to make things easy and fun</span> */}
+            <div className="space-x-2 ">
+                <span className="text-white font-medium text-2xl md:text-4xl">My</span>
+                <span className="text-[#FF014F] font-medium text-2xl md:text-4xl">Special</span>
+                <span className="text-[#FF014F] font-medium text-2xl md:text-4xl">Services</span>
+                <span className="text-white font-medium text-2xl md:text-4xl">For</span>
+                <span className="text-white font-medium text-2xl md:text-4xl">your</span>
                 <br />
-                <span className="text-white font-medium text-4xl">Business</span>
-                <span className="text-[#FF014F] font-medium text-4xl">Development</span>
+                <span className="text-white font-medium text-2xl md:text-4xl">Business</span>
+                <span className="text-[#FF014F] font-medium text-2xl md:text-4xl">Development</span>
             </div>
             <div className="flex flex-wrap justify-center">
                 <CustomCard title="Web Development" description="Modern and mobile-ready website
